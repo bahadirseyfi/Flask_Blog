@@ -1,4 +1,8 @@
-from models import User, Post
+from flask import Flask
+from run import app
+from app.forms import RegistrationForm, LoginForm
+from flask import Flask,render_template, url_for, flash, redirect
+from app.models import User, Post
 
 posts = [
     {
